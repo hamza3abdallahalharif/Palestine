@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> فلسطين</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('2.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+      color: #333;
+      opacity: 0.8;
+    }
+
+    header {
+      background-color: rgba(0, 105, 92, 0.9);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 60px; 
+  height: auto;
+  opacity: 1;
+}
+
+
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    nav {
+      background-color: rgba(0, 121, 107, 0.9);
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav button {
+      background-color: rgba(255, 255, 255, 0.5);
+      color: #00695c;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    nav button:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .content {
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.85);
+    }
+
+    .place {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .place h2 {
+      margin-top: 0;
+      color: #004d40;
+    }
+  </style>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>فلسطين</title>
+  <link rel="icon" type="image/png" href="1.png">
+  <style>
+  </style>
+</head>
+
+</head>
+<body>
+    <link rel="icon" href="1.png">
+  <header>
+    <img src="1.png" alt="شعار الموقع">
+    <h1>أماكن مشهورة وثقافة فلسطينية</h1>
+  </header>
+
+  <nav>
+    <button onclick="showSection('places')">أماكن مشهورة</button>
+    <button onclick="showSection('culture')">ثقافات</button>
+  </nav>
+
+  <div class="content">
+    <div id="places" class="section">
+      <div class="place">
+        <h2>القدس</h2>
+        <p>القدس مدينة تاريخية مقدسة للمسلمين والمسيحيين واليهود.
+        تضم المسجد الأقصى وقبة الصخرة وكنيسة القيامة في قلبها.</p>
+      </div>
+      <div class="place">
+        <h2>بيت لحم</h2>
+        <p>بيت لحم هي مهد السيد المسيح وتحتوي على كنيسة المهد العريقة.
+        تشتهر بأسواقها التقليدية والمصنوعات اليدوية الخشبية.</p>
+      </div>
+      <div class="place">
+        <h2>الخليل</h2>
+        <p>مدينة عريقة تشتهر بالحرم الإبراهيمي والزجاج المنفوخ.
+        تحتوي على أقدم الأسواق التقليدية في فلسطين.</p>
+      </div>
+      <div class="place">
+        <h2>حيفا</h2>
+        <p>تقع على الساحل وتتميز بجمال الطبيعة وجبل الكرمل.
+        تضم حدائق البهائيين وتتمتع بإطلالة خلابة على البحر.</p>
+      </div>
+    </div>
+
+    <div id="culture" class="section" style="display:none">
+      <div class="place">
+        <h2>التطريز الفلسطيني</h2>
+        <p>فن تراثي تنفذه النساء بخيوط ملونة وزخارف رمزية.
+        تختلف الأشكال حسب المنطقة وتعبّر عن الهوية الثقافية.</p>
+      </div>
+      <div class="place">
+        <h2>الدبكة</h2>
+        <p>رقصة جماعية شعبية تؤدى في الأعراس والمناسبات الوطنية.
+        تتميز بالحيوية والخطوات المتناغمة والطبل والإيقاع.</p>
+      </div>
+      <div class="place">
+        <h2>الطعام الفلسطيني</h2>
+        <p>يشتهر بأطباق مثل المسخن، المقلوبة، المجدرة، والكنافة.
+        يتميز بالنكهات الغنية ويجمع العائلة على مائدة واحدة.</p>
+      </div>
+      <div class="place">
+        <h2>الحرف اليدوية</h2>
+        <p>تشمل الزجاج المنفوخ، الفخار، والسجاد اليدوي المطرز.
+        تُصنع بأدوات تقليدية وتعكس تراثًا فنيًا غنيًا.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showSection(sectionId) {
+      document.querySelectorAll('.section').forEach(el => el.style.display = 'none');
+      document.getElementById(sectionId).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
